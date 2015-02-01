@@ -1,15 +1,21 @@
 
 import Foundation
 
-class FlightBoardingCard: BoardingCard {
+public class FlightBoardingCard: BoardingCard {
     
     var gate: String
     var baggageDeposit: String
     
-    init(identifier:String, origin: String, destination:String, gate:String, baggage:String, seat:String){
+    public init(identifier:String, origin: String, destination:String, seat:String, gate:String, baggage:String){
         self.gate = gate
         self.baggageDeposit = baggage
         super.init(identifier: identifier, origin: origin, destination: destination)
         self.seat = seat
     }
+}
+
+public func == (bordingCardA: FlightBoardingCard, bordingCardB: FlightBoardingCard) -> Bool {
+    return bordingCardA.origin == bordingCardB.origin && bordingCardA.destination == bordingCardB.destination
+        && bordingCardA.boardIdentifier == bordingCardB.boardIdentifier && bordingCardA.seat == bordingCardB.seat
+        && bordingCardA.gate == bordingCardB.gate && bordingCardA.baggageDeposit == bordingCardB.baggageDeposit
 }

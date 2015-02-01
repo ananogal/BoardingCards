@@ -19,7 +19,8 @@
 		04D78CC81A7ED7A20025499C /* FlightBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CC71A7ED7A20025499C /* FlightBoardingCard.swift */; };
 		04D78CCA1A7ED9770025499C /* TrainBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CC91A7ED9770025499C /* TrainBoardingCard.swift */; };
 		04D78CCC1A7ED9BF0025499C /* BusBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CCB1A7ED9BF0025499C /* BusBoardingCard.swift */; };
-		04D78CCE1A7EDA340025499C /* SortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CCD1A7EDA340025499C /* SortTests.swift */; };
+		04D78CCE1A7EDA340025499C /* BoardingCardSorterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CCD1A7EDA340025499C /* BoardingCardSorterTests.swift */; };
+		04D78CD11A7EDE3E0025499C /* BoardingCardSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CD01A7EDE3E0025499C /* BoardingCardSorter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		04D78CC71A7ED7A20025499C /* FlightBoardingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightBoardingCard.swift; sourceTree = "<group>"; };
 		04D78CC91A7ED9770025499C /* TrainBoardingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainBoardingCard.swift; sourceTree = "<group>"; };
 		04D78CCB1A7ED9BF0025499C /* BusBoardingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusBoardingCard.swift; sourceTree = "<group>"; };
-		04D78CCD1A7EDA340025499C /* SortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortTests.swift; sourceTree = "<group>"; };
+		04D78CCD1A7EDA340025499C /* BoardingCardSorterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardSorterTests.swift; sourceTree = "<group>"; };
+		04D78CD01A7EDE3E0025499C /* BoardingCardSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardSorter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +93,12 @@
 		04D78C931A7E9EB40025499C /* BoardingCards */ = {
 			isa = PBXGroup;
 			children = (
-				04D78C981A7E9EB60025499C /* BoardingCardViewController.swift */,
-				04D78C9A1A7E9EB60025499C /* Main.storyboard */,
-				04D78C941A7E9EB60025499C /* Supporting Files */,
 				04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */,
-				04D78CC51A7ED5410025499C /* BoardingCard.swift */,
-				04D78CC71A7ED7A20025499C /* FlightBoardingCard.swift */,
-				04D78CC91A7ED9770025499C /* TrainBoardingCard.swift */,
-				04D78CCB1A7ED9BF0025499C /* BusBoardingCard.swift */,
+				04D78C981A7E9EB60025499C /* BoardingCardViewController.swift */,
+				04D78CD01A7EDE3E0025499C /* BoardingCardSorter.swift */,
+				04D78C9A1A7E9EB60025499C /* Main.storyboard */,
+				04D78CCF1A7EDDF40025499C /* Model */,
+				04D78C941A7E9EB60025499C /* Supporting Files */,
 			);
 			path = BoardingCards;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 				04D78CC31A7ECF0D0025499C /* BoardingCardCellTests.swift */,
 				04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */,
 				04D78CAA1A7E9EB60025499C /* Supporting Files */,
-				04D78CCD1A7EDA340025499C /* SortTests.swift */,
+				04D78CCD1A7EDA340025499C /* BoardingCardSorterTests.swift */,
 			);
 			path = BoardingCardsTests;
 			sourceTree = "<group>";
@@ -131,6 +131,17 @@
 				04D78CAB1A7E9EB60025499C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D78CCF1A7EDDF40025499C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04D78CC51A7ED5410025499C /* BoardingCard.swift */,
+				04D78CCB1A7ED9BF0025499C /* BusBoardingCard.swift */,
+				04D78CC71A7ED7A20025499C /* FlightBoardingCard.swift */,
+				04D78CC91A7ED9770025499C /* TrainBoardingCard.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D78CD11A7EDE3E0025499C /* BoardingCardSorter.swift in Sources */,
 				04D78CCA1A7ED9770025499C /* TrainBoardingCard.swift in Sources */,
 				04D78C991A7E9EB60025499C /* BoardingCardViewController.swift in Sources */,
 				04D78CC61A7ED5410025499C /* BoardingCard.swift in Sources */,
@@ -248,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D78CBB1A7ECDD40025499C /* BoardingCardViewControllerTests.swift in Sources */,
-				04D78CCE1A7EDA340025499C /* SortTests.swift in Sources */,
+				04D78CCE1A7EDA340025499C /* BoardingCardSorterTests.swift in Sources */,
 				04D78CC41A7ECF0D0025499C /* BoardingCardCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

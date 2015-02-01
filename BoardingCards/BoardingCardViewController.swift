@@ -6,10 +6,10 @@ public class BoardingCardViewController: UIViewController, UITableViewDataSource
     @IBOutlet public var tblBoardingCards: UITableView!
     @IBOutlet public var btnSort: UIButton!
     
+    var boardingCards = [BoardingCard]()
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     public override func didReceiveMemoryWarning() {
@@ -22,7 +22,7 @@ public class BoardingCardViewController: UIViewController, UITableViewDataSource
     }
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return boardingCards.count
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -31,7 +31,7 @@ public class BoardingCardViewController: UIViewController, UITableViewDataSource
     }
 
     @IBAction public func pressedSortButton() {
-        
     }
+
 }
 
