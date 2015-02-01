@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		04D78C971A7E9EB60025499C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78C961A7E9EB60025499C /* AppDelegate.swift */; };
-		04D78C991A7E9EB60025499C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78C981A7E9EB60025499C /* ViewController.swift */; };
+		04D78C991A7E9EB60025499C /* BoardingCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78C981A7E9EB60025499C /* BoardingCardViewController.swift */; };
 		04D78C9C1A7E9EB60025499C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D78C9A1A7E9EB60025499C /* Main.storyboard */; };
 		04D78C9E1A7E9EB60025499C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D78C9D1A7E9EB60025499C /* Images.xcassets */; };
 		04D78CA11A7E9EB60025499C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D78C9F1A7E9EB60025499C /* LaunchScreen.xib */; };
-		04D78CAD1A7E9EB60025499C /* BoardingCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CAC1A7E9EB60025499C /* BoardingCardsTests.swift */; };
+		04D78CB71A7ECC0E0025499C /* BoardingCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */; };
+		04D78CBB1A7ECDD40025499C /* BoardingCardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		04D78C911A7E9EB40025499C /* BoardingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D78C951A7E9EB60025499C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D78C961A7E9EB60025499C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04D78C981A7E9EB60025499C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04D78C981A7E9EB60025499C /* BoardingCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingCardViewController.swift; sourceTree = "<group>"; };
 		04D78C9B1A7E9EB60025499C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04D78C9D1A7E9EB60025499C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04D78CA01A7E9EB60025499C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04D78CA61A7E9EB60025499C /* BoardingCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardingCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D78CAB1A7E9EB60025499C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04D78CAC1A7E9EB60025499C /* BoardingCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingCardsTests.swift; sourceTree = "<group>"; };
+		04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardCell.swift; sourceTree = "<group>"; };
+		04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		04D78C931A7E9EB40025499C /* BoardingCards */ = {
 			isa = PBXGroup;
 			children = (
-				04D78C981A7E9EB60025499C /* ViewController.swift */,
+				04D78C981A7E9EB60025499C /* BoardingCardViewController.swift */,
 				04D78C9A1A7E9EB60025499C /* Main.storyboard */,
 				04D78C941A7E9EB60025499C /* Supporting Files */,
+				04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */,
 			);
 			path = BoardingCards;
 			sourceTree = "<group>";
@@ -98,7 +101,7 @@
 		04D78CA91A7E9EB60025499C /* BoardingCardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				04D78CAC1A7E9EB60025499C /* BoardingCardsTests.swift */,
+				04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */,
 				04D78CAA1A7E9EB60025499C /* Supporting Files */,
 			);
 			path = BoardingCardsTests;
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D78C991A7E9EB60025499C /* ViewController.swift in Sources */,
+				04D78C991A7E9EB60025499C /* BoardingCardViewController.swift in Sources */,
 				04D78C971A7E9EB60025499C /* AppDelegate.swift in Sources */,
+				04D78CB71A7ECC0E0025499C /* BoardingCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D78CAD1A7E9EB60025499C /* BoardingCardsTests.swift in Sources */,
+				04D78CBB1A7ECDD40025499C /* BoardingCardViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
