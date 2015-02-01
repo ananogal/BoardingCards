@@ -77,11 +77,8 @@
 		04D78C931A7E9EB40025499C /* BoardingCards */ = {
 			isa = PBXGroup;
 			children = (
-				04D78C961A7E9EB60025499C /* AppDelegate.swift */,
 				04D78C981A7E9EB60025499C /* ViewController.swift */,
 				04D78C9A1A7E9EB60025499C /* Main.storyboard */,
-				04D78C9D1A7E9EB60025499C /* Images.xcassets */,
-				04D78C9F1A7E9EB60025499C /* LaunchScreen.xib */,
 				04D78C941A7E9EB60025499C /* Supporting Files */,
 			);
 			path = BoardingCards;
@@ -90,6 +87,9 @@
 		04D78C941A7E9EB60025499C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04D78C9D1A7E9EB60025499C /* Images.xcassets */,
+				04D78C9F1A7E9EB60025499C /* LaunchScreen.xib */,
+				04D78C961A7E9EB60025499C /* AppDelegate.swift */,
 				04D78C951A7E9EB60025499C /* Info.plist */,
 			);
 			name = "Supporting Files";

@@ -19,5 +19,9 @@ Provide an iPhone application that let's you sort this kind of list and present 
 ##Git Commands
 
 To create de branch development: 
+
 - `git checkout -b development`
 
+To create de feature ui:
+
+- `git checkout -b feature-ui`
