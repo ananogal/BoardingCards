@@ -14,6 +14,7 @@
 		04D78CA11A7E9EB60025499C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D78C9F1A7E9EB60025499C /* LaunchScreen.xib */; };
 		04D78CB71A7ECC0E0025499C /* BoardingCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */; };
 		04D78CBB1A7ECDD40025499C /* BoardingCardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */; };
+		04D78CC41A7ECF0D0025499C /* BoardingCardCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78CC31A7ECF0D0025499C /* BoardingCardCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		04D78CAB1A7E9EB60025499C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D78CB61A7ECC0E0025499C /* BoardingCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardCell.swift; sourceTree = "<group>"; };
 		04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardViewControllerTests.swift; sourceTree = "<group>"; };
+		04D78CC31A7ECF0D0025499C /* BoardingCardCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCardCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		04D78CA91A7E9EB60025499C /* BoardingCardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				04D78CC31A7ECF0D0025499C /* BoardingCardCellTests.swift */,
 				04D78CBA1A7ECDD40025499C /* BoardingCardViewControllerTests.swift */,
 				04D78CAA1A7E9EB60025499C /* Supporting Files */,
 			);
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D78CBB1A7ECDD40025499C /* BoardingCardViewControllerTests.swift in Sources */,
+				04D78CC41A7ECF0D0025499C /* BoardingCardCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

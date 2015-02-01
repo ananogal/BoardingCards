@@ -10,8 +10,8 @@ import UIKit
 
 public class BoardingCardCell: UITableViewCell {
 
-    @IBOutlet var lblCardIdentifier: UILabel!
-    @IBOutlet var lblOrigin: UILabel!
-    @IBOutlet var lblDestination: UILabel!
-    @IBOutlet var lblRoute: UILabel!
+    @IBOutlet public var lblCardIdentifier: UILabel!
+    @IBOutlet public var lblOrigin: UILabel!
+    @IBOutlet public var lblDestination: UILabel!
+    @IBOutlet public var lblRoute: UILabel!
 }

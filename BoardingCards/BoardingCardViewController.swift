@@ -33,7 +33,7 @@ public class BoardingCardViewController: UIViewController, UITableViewDataSource
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("boardingCardCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("boardingCardCell", forIndexPath: indexPath) as BoardingCardCell
         return cell
     }
 
