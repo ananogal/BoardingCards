@@ -16,3 +16,8 @@ Provide an iPhone application that let's you sort this kind of list and present 
  - Swift 
  - Xcode 6.1.1
 
+##Git Commands
+
+To create de branch development: 
+- `git checkout -b development`
+
