@@ -4,13 +4,14 @@ import Foundation
 public class FlightBoardingCard: BoardingCard {
     
     var gate: String
-    var baggageDeposit: String
+    var baggageDeposit: String?
     
-    public init(identifier:String, origin: String, destination:String, seat:String, gate:String, baggage:String){
+    public init(identifier:String, origin: String, destination:String, seat:String, gate:String, baggage:String?){
         self.gate = gate
         self.baggageDeposit = baggage
         super.init(identifier: identifier, origin: origin, destination: destination)
         self.seat = seat
+        self.boardIdentifier = "Flight " + self.boardIdentifier
     }
 }
 

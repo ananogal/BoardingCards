@@ -1,7 +1,7 @@
 
 import Foundation
 
-public class BoardingCard{
+public class BoardingCard: NSObject{
     
     var boardIdentifier: String
     var origin: String
